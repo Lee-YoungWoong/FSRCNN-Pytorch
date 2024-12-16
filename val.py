@@ -10,7 +10,7 @@ from skimage.metrics import peak_signal_noise_ratio
 from skimage import io
 
 
-parser = argparse.ArgumentParser(description='VDSR Validation parameters')
+parser = argparse.ArgumentParser(description='FSRCNN Validation parameters')
 parser.add_argument('--weight', type=str, required=True, help='Path to the saved model checkpoint')
 parser.add_argument('--validation_dataset', type=str, default="dataset/validation", help='Validation dataset path')
 parser.add_argument('--scale_factor', type=int, default=2, help='Upscale factor')
