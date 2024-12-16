@@ -59,7 +59,7 @@ class FSRCNN(nn.Module):
         self.activation_4th = nn.PReLU(num_parameters=d)
 
         # Deconvolution Layer(Up-sampling)
-        self.deconv = nn.ConvTranspose2d(in_channels=d, out_channels=input_channels, kernel_size=7, stride=scale_factor, padding=3, output_padding=scale_factor-1)
+        self.deconv = nn.ConvTranspose2d(in_channels=d, out_channels=input_channels, kernel_size=9, stride=scale_factor, padding=3, output_padding=scale_factor-1)
         nn.init.normal_(self.deconv.weight, mean=0.0, std=0.001)
         nn.init.zeros_(self.deconv.bias)
 
