@@ -2,6 +2,7 @@
 
 Implementation of FSRCNN in PyTorch.
 
+![fsrcnn](https://github.com/user-attachments/assets/43ac05ca-29b1-4797-92e9-405107d5ae54)
 
 Provide 3 image format "RGB, YCb, Y"
 
